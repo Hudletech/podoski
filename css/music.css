@@ -1,0 +1,66 @@
+/* Add your custom CSS styles here */
+
+/* Styles for the music section */
+.music-section {
+    background: black;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    color: #ffffff;
+  }
+  
+  /* Styles for the music header */
+  .music-header {
+    text-align: center;
+  }
+  
+  .music-title {
+    color: white;
+  }
+  
+  /* Styles for the grid box */
+  .music-box {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Styles for the song list */
+  .song-list ul {
+    list-style: none;
+  }
+  
+  .song-list ul li {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .song-list ul li .text {
+    color: #827c6d;
+  }
+  
+  /* Styles for the music footer */
+  .music-footer {
+    text-align: center;
+  }
+  
+  .album-name {
+    color: #626263;
+  }
+  
+  .stream-info {
+    color: white;
+  }
+  
+  .social-icons a {
+    color: white;
+    margin: 0 5px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 767px) {
+    .music-box {
+      margin-bottom: 15px;
+    }
+  }
+  

@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="css/slicknav.min.css" />
     <link rel="stylesheet" href="css/style.css" />
 
+    <link rel="stylesheet" href="css/music.css" />
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -214,111 +216,134 @@
       </style>
     </section>
 
-    <!-- Music Section Begin -->
     <section class="music-section">
-      <center>
-        <h2 style="color: white"><b>-EP</b></h2>
-      </center>
-      <br />
       <div class="container">
+        <div class="music-header">
+          <h2 class="music-title">-EP</h2>
+        </div>
         <div class="row">
-          <!-- Grid Box -->
           <div class="col-md-4">
             <div class="music-box">
-              <video autoplay muted loop class="video" width="360" height="360">
-                <source src="imgs/01.mov" />
+              <video
+                autoplay
+                muted
+                loop
+                class="video"
+                controls
+                width="100%"
+                height="auto"
+              >
+                <source src="imgs/01.mov" type="video/mp4" />
               </video>
-              <h3 style="color: #827c6d">Why</h3>
-              <p>01</p>
             </div>
           </div>
-          <!-- Grid Box -->
-          <div class="col-md-4">
-            <div class="music-box">
-              <video autoplay muted loop class="video" width="360" height="360">
-                <source src="imgs/01.mov" />
-              </video>
-              <h3 style="color: #827c6d">YAI (SKIT)</h3>
-              <p>02</p>
-            </div>
-          </div>
-          <!-- Grid Box -->
-          <div class="col-md-4">
-            <div class="music-box">
-              <video autoplay muted loop class="video" width="360" height="360">
-                <source src="imgs/01.mov" />
-              </video>
-              <h3 style="color: #827c6d">IN THE MORNING</h3>
-              <p>03</p>
+          <div class="col-md-8">
+            <div class="song-list">
+              <ul>
+                <li>
+                  <span class="text">01:</span> Why
+                  <br />
+                  <audio controls>
+                    <source src="audio/why.mp3" type="audio/mpeg" />
+                  </audio>
+                </li>
+                <li>
+                  <span class="text">02:</span> YAI (skit)
+                  <br />
+                  <audio controls>
+                    <source src="audio/yai.mp3" type="audio/mpeg" />
+                  </audio>
+                </li>
+                <li>
+                  <span class="text">03:</span> In The Morning
+                  <br />
+                  <audio controls>
+                    <source src="audio/in_the_morning.mp3" type="audio/mpeg" />
+                  </audio>
+                </li>
+                <li>
+                  <span class="text">04:</span> Sex $ign
+                  <br />
+                  <audio controls>
+                    <source src="audio/sex_sign.mp3" type="audio/mpeg" />
+                  </audio>
+                </li>
+                <li>
+                  <span class="text">05:</span> Girls
+                  <br />
+                  <audio controls>
+                    <source src="audio/girls.mp3" type="audio/mpeg" />
+                  </audio>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-      <center>
-        <h4 style="color: #626263">YOUNG & INFATUATED</h4>
-        <br />
-        <p style="color: white">STREAM ON</p>
+      <div class="music-footer">
+        <h4 class="album-name">YOUNG & INFATUATED</h4>
+        <p class="stream-info">STREAM ON</p>
         <div class="header__right__social">
           <a href="#"><i class="fa fa-apple"></i></a>
           <a href="#"><i class="fa fa-spotify"></i></a>
           <a href="#"><i class="fa fa-youtube"></i></a>
           <a href="#"><i class="fa fa-soundcloud"></i></a>
         </div>
-      </center>
-
-      <style>
-        /* Styles for the section with background image */
-        .music-section {
-          background: black;
-          background-size: cover;
-          background-position: center;
-          padding: 80px 0;
-          color: #ffffff; /* Text color */
-        }
-
-        /* Styles for the grid box */
-        .music-box {
-          text-align: center;
-          margin-bottom: 30px;
-          position: relative; /* Position relative for absolute positioning of dropdown */
-        }
-
-        /* Styles for the listen now button */
-        .listen-now-btn {
-          display: inline-block;
-          font-weight: bold;
-          font-size: 14px;
-          text-transform: uppercase;
-          padding: 10px 20px;
-          color: white;
-          background-color: transparent;
-          border: 2px solid #827c6d;
-          border-radius: 5px;
-          transition: background-color 0.3s, color 0.3s;
-        }
-
-        .listen-now-btn:hover {
-          background: transparent;
-          color: #827c6d;
-          border-color: #626263;
-        }
-
-        /* Styles for the song list */
-        .song-list ul {
-          list-style: none;
-        }
-
-        .song-list ul li {
-          color: white;
-          font-weight: bold;
-          margin-bottom: 10px;
-        }
-
-        .song-list ul li .text {
-          color: #827c6d;
-        }
-      </style>
+      </div>
     </section>
+
+    <style>
+      /* Styles for the section with background image */
+      .music-section {
+        background: black;
+        background-size: cover;
+        background-position: center;
+        padding: 80px 0;
+        color: #ffffff; /* Text color */
+      }
+
+      /* Styles for the grid box */
+      .music-box {
+        text-align: center;
+        margin-bottom: 30px;
+        position: relative; /* Position relative for absolute positioning of dropdown */
+      }
+
+      /* Styles for the listen now button */
+      .listen-now-btn {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        color: white;
+        background-color: transparent;
+        border: 2px solid #827c6d;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .listen-now-btn:hover {
+        background: transparent;
+        color: #827c6d;
+        border-color: #626263;
+      }
+
+      /* Styles for the song list */
+      .song-list ul {
+        list-style: none;
+      }
+
+      .song-list ul li {
+        color: white;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .song-list ul li .text {
+        color: #827c6d;
+      }
+    </style>
 
     <!-- Gallery Section Begin -->
     <section
