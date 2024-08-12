@@ -2,7 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Podoski | The Official Website " />
+    <meta name="description" content="Podoski | The Official Website" />
+    <meta name="author" content="Oviawe Efosa Iruosa" />
+    <meta name="developer" content="Hudle Technology" />
     <link rel="icon" type="image/png" href="favico.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Podoski | The Official Website</title>
@@ -30,6 +32,73 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- Move CSS styles to the head -->
+    <style>
+      /* Music Section */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .music-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .album {
+        text-align: center;
+      }
+
+      .album img {
+        width: 350px;
+        height: 350px;
+        margin-bottom: 10px;
+      }
+
+      .album h2 {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      .songs {
+        list-style: none;
+        padding: 0;
+      }
+
+      .song {
+        margin-top: 20px;
+      }
+
+      .song .dropdown {
+        display: none;
+      }
+
+      .song:hover .dropdown {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+      }
+
+      .play-btn,
+      .download-btn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #fff;
+        background: #626263; /* Background color */
+      }
+
+      .play-btn:hover,
+      .download-btn:hover {
+        background: #4c4c4c; /* Hover background color */
+      }
+    </style>
   </head>
 
   <body>
@@ -53,6 +122,7 @@
                   <li><a href="index.html">Home</a></li>
                   <li class="active"><a href="about.html">About</a></li>
                   <li><a href="nextdoor.html">Next Door</a></li>
+                  <li><a href="merch.html">Merch</a></li>
                 </ul>
               </nav>
               <div class="header__right__social">
@@ -166,7 +236,7 @@
             <div class="grid-box">
               <br />
               <br />
-              <img src="imgs/M3.jpg" alt="Podoski 2" />
+              <img src="imgs/M3.JPG" alt="Podoski 2" />
               <center>
                 <h4 style="color: white"><b>"IN THE MORNING"</b></h4>
               </center>
@@ -218,70 +288,120 @@
 
     <section class="music-section">
       <div class="container">
-        <div class="music-header">
-          <h2 class="music-title">-EP</h2>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="music-box">
-              <video
-                autoplay
-                muted
-                loop
-                class="video"
-                controls
-                width="100%"
-                height="auto"
-              >
-                <source src="imgs/01.mov" type="video/mp4" />
-              </video>
+        <div class="music-list">
+          <div class="album">
+            <img src="imgs/M5.jpg" alt="Album Cover" />
+            <h4 class="album-name">YOUNG & INFATUATED</h4>
+            <!-- Song 1 -->
+            <div class="grid-box" style="background-color: #2c2b2b">
+              <ul class="songs">
+                <li class="song">
+                  <span>WHY</span>
+                  <div class="dropdown">
+                    <div class="audio-container">
+                      <audio controls>
+                        <source src="songs/WHY.mp3" type="audio/mpeg" />
+                      </audio>
+                      <div class="header__right__social">
+                        <a href="#"><i class="fa fa-apple"></i></a>
+                        <a href="#"><i class="fa fa-spotify"></i></a>
+                        <a href="#"><i class="fa fa-soundcloud"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
-          </div>
-          <div class="col-md-8">
-            <div class="song-list">
-              <ul>
-                <li>
-                  <span class="text">01:</span> Why
-                  <br />
-                  <audio controls>
-                    <source src="audio/why.mp3" type="audio/mpeg" />
-                  </audio>
+            <!-- Song 2 -->
+            <div class="grid-box" style="background-color: #2c2b2b">
+              <ul class="songs">
+                <li class="song">
+                  <span>YAI (skit)</span>
+                  <div class="dropdown">
+                    <div class="audio-container">
+                      <audio controls>
+                        <source src="songs/YAI.mp3" type="audio/mpeg" />
+                      </audio>
+                      <div class="header__right__social">
+                        <a href="#"><i class="fa fa-apple"></i></a>
+                        <a href="#"><i class="fa fa-spotify"></i></a>
+                        <a href="#"><i class="fa fa-soundcloud"></i></a>
+                      </div>
+                    </div>
+                  </div>
                 </li>
-                <li>
-                  <span class="text">02:</span> YAI (skit)
-                  <br />
-                  <audio controls>
-                    <source src="audio/yai.mp3" type="audio/mpeg" />
-                  </audio>
+              </ul>
+            </div>
+            <!-- Add more song grid boxes as needed -->
+
+            <div class="grid-box" style="background-color: #2c2b2b">
+              <ul class="songs">
+                <li class="song">
+                  <span>In The Morning</span>
+                  <div class="dropdown">
+                    <div class="audio-container">
+                      <audio controls>
+                        <source
+                          src="songs/IN THE MORNING.mp3"
+                          type="audio/mpeg"
+                        />
+                      </audio>
+                      <div class="header__right__social">
+                        <a href="#"><i class="fa fa-apple"></i></a>
+                        <a href="#"><i class="fa fa-spotify"></i></a>
+                        <a href="#"><i class="fa fa-soundcloud"></i></a>
+                      </div>
+                    </div>
+                  </div>
                 </li>
-                <li>
-                  <span class="text">03:</span> In The Morning
-                  <br />
-                  <audio controls>
-                    <source src="audio/in_the_morning.mp3" type="audio/mpeg" />
-                  </audio>
+              </ul>
+            </div>
+
+            <div class="grid-box" style="background-color: #2c2b2b">
+              <ul class="songs">
+                <li class="song">
+                  <span>Sex $ign</span>
+                  <div class="dropdown">
+                    <div class="audio-container">
+                      <audio controls>
+                        <source src="songs/SEX $IGN.mp3" type="audio/mpeg" />
+                      </audio>
+                      <div class="header__right__social">
+                        <a href="#"><i class="fa fa-apple"></i></a>
+                        <a href="#"><i class="fa fa-spotify"></i></a>
+                        <a href="#"><i class="fa fa-soundcloud"></i></a>
+                      </div>
+                    </div>
+                  </div>
                 </li>
-                <li>
-                  <span class="text">04:</span> Sex $ign
-                  <br />
-                  <audio controls>
-                    <source src="audio/sex_sign.mp3" type="audio/mpeg" />
-                  </audio>
-                </li>
-                <li>
-                  <span class="text">05:</span> Girls
-                  <br />
-                  <audio controls>
-                    <source src="audio/girls.mp3" type="audio/mpeg" />
-                  </audio>
+              </ul>
+            </div>
+
+            <div class="grid-box" style="background-color: #2c2b2b">
+              <ul class="songs">
+                <li class="song">
+                  <span>Girls</span>
+                  <div class="dropdown">
+                    <div class="audio-container">
+                      <audio controls>
+                        <source src="songs/GIRLS.mp3" type="audio/mpeg" />
+                      </audio>
+                      <div class="header__right__social">
+                        <a href="#"><i class="fa fa-apple"></i></a>
+                        <a href="#"><i class="fa fa-spotify"></i></a>
+                        <a href="#"><i class="fa fa-soundcloud"></i></a>
+                      </div>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+      <br />
+      <br />
       <div class="music-footer">
-        <h4 class="album-name">YOUNG & INFATUATED</h4>
         <p class="stream-info">STREAM ON</p>
         <div class="header__right__social">
           <a href="#"><i class="fa fa-apple"></i></a>
@@ -291,6 +411,18 @@
         </div>
       </div>
     </section>
+
+    <style>
+      .audio-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .audio-container audio {
+        margin-bottom: 10px; /* Adjust as needed */
+      }
+    </style>
 
     <style>
       /* Styles for the section with background image */
@@ -396,6 +528,13 @@
             <div class="grid-box">
               <br />
               <img src="imgs/03.JPG" alt="Image 6" />
+            </div>
+          </div>
+          <!-- Seventh Grid Box -->
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="grid-box">
+              <br />
+              <img src="imgs/18.JPG" alt="Image 6" />
             </div>
           </div>
         </div>
